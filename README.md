@@ -1,3 +1,3 @@
 # LTCB
-# Nguyễn Duy Hưng
+# Nguyễn Duy Hưng - AT21C
 bai tap lap trinh can ban
