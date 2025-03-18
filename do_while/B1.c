@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdbool.h>
-static bool s_isFirstCall = true;
 int main()
 {
     int count = 1;
@@ -8,13 +7,10 @@ int main()
     while (count <= 10)
     {
         int x;
-        if (s_isFirstCall)
-        {
-            printf("nhap vao mot so nguyen:");
-            s_isFirstCall = false;
-        }
-            else   
-            printf("nhap vao mot so nguyen khac:");
+        if (count == 1)
+            printf("nhap vao mot so nguyen(enter de nhap so tiep theo): ");
+        else   
+            printf("nhap vao mot so nguyen khac(enter de nhan so tiep theo); ");
         scanf("%d",&x);
         total += x;
         ++count;
