@@ -1,17 +1,15 @@
 #include<stdio.h>
 #include<stdbool.h>
+#include<math.h>
 bool prime_num_check(int x)
 {
-    int count = 0;
-    for(int i = 2; i < x; ++i)
+    for(int i = 2; i <= sqrt(x); ++i)
     {
         if ((x % i) == 0)
-        ++count;
+            return false;
     }
-    if (count > 0)
-        return false;
-    else 
-        return true;
+    return true;
+
 }
 int main()
 {
