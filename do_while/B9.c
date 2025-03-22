@@ -13,7 +13,7 @@ double sum(long long n)
 int main()
 {   long long n;
     printf("nhap vao mot gia tri n: ");
-    scanf("%d",&n);
+    scanf("%lld",&n);
     printf(" 1 + 1/2! + ... + 1/n! = %lf",sum(n));
     return 0;
 }
