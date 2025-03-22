@@ -9,7 +9,7 @@ double sum(int n)
     return sum;
 }
 int main()
-{   int n = 5;
+{   int n;
     printf("nhap vao mot gia tri n: ");
     scanf("%d",&n);
     printf(" 1 + 1/2 + ... + 1/n = %lf",sum(n));
