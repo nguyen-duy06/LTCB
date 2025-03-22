@@ -1,5 +1,5 @@
 #include<stdio.h>
-int  fac(int x)
+int  fac(long long x)
 {
     long long fac = 1;
     for (long long i = 1; i <= x; ++i)
@@ -12,7 +12,7 @@ int main()
 { 
     long long x;
     printf("nhap vao 1 so nguyen: ");
-    scanf("%d",&x);
-    printf("x! = %d",fac(x));
+    scanf("%lld",&x);
+    printf("x! = %lld",fac(x));
     return 0;
 }
