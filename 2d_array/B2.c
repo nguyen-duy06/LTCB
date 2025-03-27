@@ -19,6 +19,17 @@ void sum_arr(int i,int j,int a[i][j],int b[i][j],int c[i][j])
         }
     }
 }
+void print_c(int i,int j,int c[i][j])
+{
+    for (int x = 0; x < i; ++x)
+    {
+        for (int y = 0; y < j; ++y)
+        {
+            printf("%d ",c[x][y]);
+        }
+        printf("\n");
+    }
+}
 int main()
 {
     int i,j;
@@ -28,20 +39,13 @@ int main()
     int b[i][j];
     int c[i][j];
 
-    printf("nhap cac phan tu cau ma tran a\n");
+    printf("nhap cac phan tu cua ma tran a\n");
     input(i,j,a);
-    printf("nhap cac phan tu cau ma tran b\n");
+    printf("nhap cac phan tu cua ma tran b\n");
     input(i,j,b);
     printf("tong cua 2 ma tran a va b:\n");
     sum_arr(i,j,a,b,c);
-    for (int x = 0; x < i; ++x)
-    {
-        for (int y = 0; y < j; ++y)
-        {
-            printf("%d ",c[x][y]);
-        }
-        printf("\n");
-    }
+    print_c(i,j,c);
 
     return 0;
 }
